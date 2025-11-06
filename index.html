@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appshub - Mobile App Development</title>
     <style>
-        /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -28,7 +27,6 @@
             overflow-x: hidden;
         }
         
-        /* Typography */
         h1, h2, h3, h4 {
             font-weight: 700;
             line-height: 1.2;
@@ -48,7 +46,6 @@
             color: var(--text-light);
         }
         
-        /* Layout */
         .container {
             width: 100%;
             max-width: 1200px;
@@ -60,7 +57,6 @@
             padding: 5rem 0;
         }
         
-        /* Header */
         header {
             padding: 1.5rem 0;
             position: fixed;
@@ -110,7 +106,6 @@
             color: var(--text);
         }
         
-        /* Hero Section */
         .hero {
             padding-top: 10rem;
             padding-bottom: 5rem;
@@ -140,44 +135,6 @@
             align-items: center;
         }
         
-        .hero-image img {
-            max-width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background-color: var(--primary);
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-        
-        .btn:hover {
-            background-color: var(--primary-dark);
-            transform: translateY(-2px);
-        }
-        
-        .btn-outline {
-            background-color: transparent;
-            border: 1px solid var(--primary);
-            color: var(--primary);
-            margin-left: 1rem;
-        }
-        
-        .btn-outline:hover {
-            background-color: var(--primary);
-            color: white;
-        }
-        
-        /* Services */
         .services {
             background-color: var(--section-bg);
         }
@@ -203,6 +160,7 @@
             padding: 2rem;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
         }
         
         .service-card:hover {
@@ -216,36 +174,6 @@
             margin-bottom: 1.5rem;
         }
         
-        /* Portfolio */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .portfolio-item {
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s;
-        }
-        
-        .portfolio-item:hover {
-            transform: translateY(-5px);
-        }
-        
-        .portfolio-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .portfolio-content {
-            padding: 1.5rem;
-            background: white;
-        }
-        
-        /* CTA */
         .cta {
             background-color: var(--primary);
             color: white;
@@ -262,16 +190,6 @@
             margin: 0 auto 2rem;
         }
         
-        .cta .btn {
-            background-color: white;
-            color: var(--primary);
-        }
-        
-        .cta .btn:hover {
-            background-color: rgba(255, 255, 255, 0.9);
-        }
-        
-        /* Footer */
         footer {
             background-color: var(--text);
             color: white;
@@ -316,7 +234,6 @@
             color: rgba(255, 255, 255, 0.5);
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
@@ -364,7 +281,6 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
@@ -373,38 +289,27 @@
                 <nav>
                     <ul>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#process">Process</a></li>
-                        <li><a href="#contact" class="btn">Get in Touch</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Build Exceptional Mobile Experiences</h1>
                     <p>We transform innovative ideas into powerful mobile applications that users love. Our team of expert developers creates custom solutions for iOS and Android platforms.</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn">Start Your Project</a>
-                        <a href="#portfolio" class="btn btn-outline">View Our Work</a>
-                    </div>
                 </div>
                 <div class="hero-image">
-                    <!-- Placeholder for app screenshots -->
-                    <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">
-                        App Preview
-                    </div>
+                    <div style="width: 100%; height: 300px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px;"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
@@ -431,55 +336,13 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Work</h2>
-                <p>Explore some of our recent successful app development projects.</p>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white;">
-                        Fitness App
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>FitTrack Pro</h3>
-                        <p>A comprehensive fitness tracking application with personalized workout plans and progress analytics.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white;">
-                        Finance App
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>MoneyFlow</h3>
-                        <p>An intuitive budgeting app that helps users track expenses and achieve their financial goals.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); display: flex; align-items: center; justify-content: center; color: white;">
-                        Food Delivery App
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>QuickBite</h3>
-                        <p>A food delivery platform connecting restaurants with customers for fast, reliable meal delivery.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
     <section id="contact" class="cta">
         <div class="container">
             <h2>Ready to Bring Your App Idea to Life?</h2>
-            <p>Contact us today for a free consultation and project estimate. Let's build something amazing together.</p>
-            <a href="#contact" class="btn">Get Started</a>
+            <p>Contact us today to discuss your project requirements and get a personalized solution.</p>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -490,28 +353,10 @@
                 <div class="footer-column">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="#">iOS Development</a></li>
-                        <li><a href="#">Android Development</a></li>
-                        <li><a href="#">UI/UX Design</a></li>
-                        <li><a href="#">App Maintenance</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Connect</h3>
-                    <ul>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Dribbble</a></li>
+                        <li><a href="#services">iOS Development</a></li>
+                        <li><a href="#services">Android Development</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">App Maintenance</a></li>
                     </ul>
                 </div>
             </div>
@@ -522,7 +367,6 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
         const mobileToggle = document.querySelector('.mobile-toggle');
         const nav = document.querySelector('nav');
         
@@ -530,7 +374,6 @@
             nav.classList.toggle('active');
         });
         
-        // Close mobile menu when clicking on a link
         const navLinks = document.querySelectorAll('nav a');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -538,7 +381,6 @@
             });
         });
         
-        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
